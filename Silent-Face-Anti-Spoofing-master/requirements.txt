@@ -1,0 +1,5 @@
+easydict==1.9
+tqdm==4.31.1
+torchvision==0.1.6
+torch==1.7.0
+tensorboardX==2.0
