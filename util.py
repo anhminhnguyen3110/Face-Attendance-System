@@ -5,6 +5,7 @@ import tkinter as tk
 from tkinter import messagebox
 import face_recognition
 
+from Silent_Face_Anti_Spoofing_master.test import test
 
 def get_button(window, text, color, command, fg='white'):
     button = tk.Button(
@@ -48,8 +49,16 @@ def msg_box(title, description):
 
 def recognize(img, db_path):
     # it is assumed there will be at most 1 match in the db
-
     embeddings_unknown = face_recognition.face_encodings(img)
+    
+    spoofing = test(
+        img,
+        model_dir='./Silent_Face_Anti_Spoofing_master/resources/anti_spoof_models',
+        device_id=0
+    )
+    
+    print(spoofing)
+    
     if len(embeddings_unknown) == 0:
         return 'no_persons_found'
     else:
@@ -58,6 +67,9 @@ def recognize(img, db_path):
     db_dir = sorted(os.listdir(db_path))
 
     match = False
+    
+    
+    
     j = 0
     while not match and j < len(db_dir):
         path_ = os.path.join(db_path, db_dir[j])
@@ -65,7 +77,7 @@ def recognize(img, db_path):
         file = open(path_, 'rb')
         embeddings = pickle.load(file)
 
-        match = face_recognition.compare_faces([embeddings], embeddings_unknown)[0]
+        match = face_recognition.compare_faces([embeddings], embeddings_unknown, tolerance=0.4)[0]
         j += 1
 
     if match:
