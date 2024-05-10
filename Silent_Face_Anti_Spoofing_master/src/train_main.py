@@ -11,9 +11,9 @@ from torch.nn import CrossEntropyLoss, MSELoss
 from tqdm import tqdm
 from tensorboardX import SummaryWriter
 
-from src.utility import get_time
-from src.model_lib.MultiFTNet import MultiFTNet
-from src.data_io.dataset_loader import get_train_loader
+from Silent_Face_Anti_Spoofing_master.src.utility import get_time
+from Silent_Face_Anti_Spoofing_master.src.model_lib.MultiFTNet import MultiFTNet
+from Silent_Face_Anti_Spoofing_master.src.data_io.dataset_loader import get_train_loader
 
 
 class TrainMain:

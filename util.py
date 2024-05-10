@@ -57,7 +57,8 @@ def recognize(img, db_path):
         device_id=0
     )
     
-    print(spoofing)
+    if(spoofing != 1):
+        return 'spoofing'
     
     if len(embeddings_unknown) == 0:
         return 'no_persons_found'

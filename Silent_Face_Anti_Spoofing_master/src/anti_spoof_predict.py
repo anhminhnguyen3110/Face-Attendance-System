@@ -13,9 +13,9 @@ import numpy as np
 import torch.nn.functional as F
 
 
-from src.model_lib.MiniFASNet import MiniFASNetV1, MiniFASNetV2,MiniFASNetV1SE,MiniFASNetV2SE
-from src.data_io import transform as trans
-from src.utility import get_kernel, parse_model_name
+from Silent_Face_Anti_Spoofing_master.src.model_lib.MiniFASNet import MiniFASNetV1, MiniFASNetV2,MiniFASNetV1SE,MiniFASNetV2SE
+from Silent_Face_Anti_Spoofing_master.src.data_io import transform as trans
+from Silent_Face_Anti_Spoofing_master.src.utility import get_kernel, parse_model_name
 
 MODEL_MAPPING = {
     'MiniFASNetV1': MiniFASNetV1,
@@ -27,8 +27,8 @@ MODEL_MAPPING = {
 
 class Detection:
     def __init__(self):
-        caffemodel = "./resources/detection_model/Widerface-RetinaFace.caffemodel"
-        deploy = "./resources/detection_model/deploy.prototxt"
+        caffemodel = "Silent_Face_Anti_Spoofing_master/resources/detection_model/Widerface-RetinaFace.caffemodel"
+        deploy = "Silent_Face_Anti_Spoofing_master/resources/detection_model/deploy.prototxt"
         self.detector = cv2.dnn.readNetFromCaffe(deploy, caffemodel)
         self.detector_confidence = 0.6
 
@@ -53,8 +53,7 @@ class Detection:
 class AntiSpoofPredict(Detection):
     def __init__(self, device_id):
         super(AntiSpoofPredict, self).__init__()
-        self.device = torch.device("cuda:{}".format(device_id)
-                                   if torch.cuda.is_available() else "cpu")
+        self.device = "cpu"
 
     def _load_model(self, model_path):
         # define model

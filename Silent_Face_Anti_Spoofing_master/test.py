@@ -12,9 +12,9 @@ import argparse
 import warnings
 import time
 
-from src.anti_spoof_predict import AntiSpoofPredict
-from src.generate_patches import CropImage
-from src.utility import parse_model_name
+from Silent_Face_Anti_Spoofing_master.src.anti_spoof_predict import AntiSpoofPredict
+from Silent_Face_Anti_Spoofing_master.src.generate_patches import CropImage
+from Silent_Face_Anti_Spoofing_master.src.utility import parse_model_name
 warnings.filterwarnings('ignore')
 
 
