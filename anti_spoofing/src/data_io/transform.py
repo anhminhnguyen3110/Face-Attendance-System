@@ -17,7 +17,7 @@ import numpy as np
 import numbers
 import types
 
-from Silent_Face_Anti_Spoofing_master.src.data_io import functional as F
+from anti_spoofing.src.data_io import functional as F
 
 __all__ = ["Compose", "ToTensor", "ToPILImage", "Normalize", "RandomHorizontalFlip",
            "Lambda", "RandomResizedCrop", "ColorJitter", "RandomRotation"]

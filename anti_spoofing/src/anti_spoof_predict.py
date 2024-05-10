@@ -13,9 +13,9 @@ import numpy as np
 import torch.nn.functional as F
 
 
-from Silent_Face_Anti_Spoofing_master.src.model_lib.MiniFASNet import MiniFASNetV1, MiniFASNetV2,MiniFASNetV1SE,MiniFASNetV2SE
-from Silent_Face_Anti_Spoofing_master.src.data_io import transform as trans
-from Silent_Face_Anti_Spoofing_master.src.utility import get_kernel, parse_model_name
+from anti_spoofing.src.model_lib.MiniFASNet import MiniFASNetV1, MiniFASNetV2,MiniFASNetV1SE,MiniFASNetV2SE
+from anti_spoofing.src.data_io import transform as trans
+from anti_spoofing.src.utility import get_kernel, parse_model_name
 
 MODEL_MAPPING = {
     'MiniFASNetV1': MiniFASNetV1,
@@ -27,8 +27,8 @@ MODEL_MAPPING = {
 
 class Detection:
     def __init__(self):
-        caffemodel = "Silent_Face_Anti_Spoofing_master/resources/detection_model/Widerface-RetinaFace.caffemodel"
-        deploy = "Silent_Face_Anti_Spoofing_master/resources/detection_model/deploy.prototxt"
+        caffemodel = "anti_spoofing/resources/detection_model/Widerface-RetinaFace.caffemodel"
+        deploy = "anti_spoofing/resources/detection_model/deploy.prototxt"
         self.detector = cv2.dnn.readNetFromCaffe(deploy, caffemodel)
         self.detector_confidence = 0.6
 

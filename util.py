@@ -5,7 +5,7 @@ import tkinter as tk
 from tkinter import messagebox
 import face_recognition
 
-from Silent_Face_Anti_Spoofing_master.test import test
+from anti_spoofing.test import test
 
 def get_button(window, text, color, command, fg='white'):
     button = tk.Button(
@@ -53,7 +53,7 @@ def recognize(img, db_path):
     
     spoofing = test(
         img,
-        model_dir='./Silent_Face_Anti_Spoofing_master/resources/anti_spoof_models',
+        model_dir='./anti_spoofing/resources/anti_spoof_models',
         device_id=0
     )
     

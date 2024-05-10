@@ -7,8 +7,8 @@
 
 import argparse
 import os
-from Silent_Face_Anti_Spoofing_master.src.train_main import TrainMain
-from Silent_Face_Anti_Spoofing_master.src.default_config import get_default_config, update_config
+from anti_spoofing.src.train_main import TrainMain
+from anti_spoofing.src.default_config import get_default_config, update_config
 
 
 def parse_args():
