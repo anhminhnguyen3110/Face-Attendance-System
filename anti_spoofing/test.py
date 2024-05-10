@@ -1,14 +1,6 @@
-# -*- coding: utf-8 -*-
-# @Time : 20-6-9 下午3:06
-# @Author : zhuying
-# @Company : Minivision
-# @File : test.py
-# @Software : PyCharm
-
 import os
 import cv2
 import numpy as np
-import argparse
 import warnings
 import time
 
@@ -17,11 +9,6 @@ from anti_spoofing.src.generate_patches import CropImage
 from anti_spoofing.src.utility import parse_model_name
 warnings.filterwarnings('ignore')
 
-
-SAMPLE_IMAGE_PATH = "./images/sample/"
-
-
-# 因为安卓端APK获取的视频流宽高比为3:4,为了与之一致，所以将宽高比限制为3:4
 def check_image(image):
     height, width, channel = image.shape
     if width/height != 3/4:
@@ -65,24 +52,3 @@ def test(image, model_dir, device_id):
     value = prediction[0][label]/2
 
     return label
-
-# if __name__ == "__main__":
-#     desc = "test"
-#     parser = argparse.ArgumentParser(description=desc)
-#     parser.add_argument(
-#         "--device_id",
-#         type=int,
-#         default=0,
-#         help="which gpu id, [0/1/2/3]")
-#     parser.add_argument(
-#         "--model_dir",
-#         type=str,
-#         default="./resources/anti_spoof_models",
-#         help="model_lib used to test")
-#     parser.add_argument(
-#         "--image_name",
-#         type=str,
-#         default="image_F1.jpg",
-#         help="image used to test")
-#     args = parser.parse_args()
-#     test(args.image_name, args.model_dir, args.device_id)
