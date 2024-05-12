@@ -90,10 +90,25 @@ class App:
         face_name = "No Face"
         if face_locations:
             face_name = util.recognize(rgb_frame, self.db_dir)  # Ensure that the correct frame format is used for recognition
+            eye_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_eye.xml')
+            smile_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_smile.xml')
+            
+            for top, right, bottom, left in face_locations:
+                cv2.rectangle(frame, (left, top), (right, bottom), (0, 0, 255), 2)
+                cv2.putText(frame, face_name, (left, top - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.9, (36, 255, 12), 2)
+                roi_gray = frame[top:bottom, left:right]
+                roi_color = frame[top:bottom, left:right]
+                # Detect eyes
+                eyes = eye_cascade.detectMultiScale(roi_gray, scaleFactor=1.3, minNeighbors=5, minSize=(30, 30))
+                for (ex, ey, ew, eh) in eyes:
+                    cv2.rectangle(roi_color, (ex, ey), (ex + ew, ey + eh), (0, 255, 0), 2)
+                    cv2.putText(frame, 'Eye', (left + ex, top + ey - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.9, (36, 255, 12), 2)
 
-        for top, right, bottom, left in face_locations:
-            cv2.rectangle(frame, (left, top), (right, bottom), (0, 0, 255), 2)
-            cv2.putText(frame, face_name, (left, top - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.9, (36, 255, 12), 2)
+                # Detect smiles
+                smiles = smile_cascade.detectMultiScale(roi_gray, scaleFactor=1.8, minNeighbors=20, minSize=(30, 30))
+                for (sx, sy, sw, sh) in smiles:
+                    cv2.rectangle(roi_color, (sx, sy), (sx + sw, sy + sh), (0, 255, 255), 2)
+                    cv2.putText(frame, 'Smile', (left + sx, top + sy - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.9, (36, 255, 12), 2)
     
     def check_attendance(self):
         name = util.recognize(self.most_recent_capture_arr, self.db_dir)
