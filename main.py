@@ -1,8 +1,6 @@
 import os.path
 import datetime
 import pickle
-import threading
-from time import sleep
 import tkinter as tk
 import cv2
 from PIL import Image, ImageTk
@@ -115,6 +113,8 @@ class App:
 
         if name in ['unknown_person', 'no_persons_found']:
             util.msg_box('Ups...', 'Unknown user. Please register new user or try again.')
+        elif name == 'spoofing':
+            util.msg_box('Ups...', 'Spoofing detected.')
         else:
             util.msg_box('Welcome back !', 'Welcome, {}.'.format(name))
             with open(self.log_path, 'a') as f:
