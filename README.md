@@ -125,35 +125,38 @@ OpenCV (cv2) is used for real-time image processing. The `face_recognition` libr
 
 New users can be registered by capturing their facial data and storing the corresponding embeddings. Below is a placeholder for images demonstrating user registration.
 
-<img src="https://github.com/anhminhnguyen3110/Face-attendance-system/assets/57170354/449504ee-e1b5-43e9-87f5-7b56217a7af0" width="500"/>
-
-<img src="https://github.com/anhminhnguyen3110/Face-attendance-system/assets/57170354/4766fa59-ec22-46b4-b3ac-dee4dbd7f9cf" width="500"/>
+<p align="center">
+<img src="https://github.com/anhminhnguyen3110/Face-attendance-system/assets/57170354/449504ee-e1b5-43e9-87f5-7b56217a7af0" width="300"/>
+<img src="https://github.com/anhminhnguyen3110/Face-attendance-system/assets/57170354/4766fa59-ec22-46b4-b3ac-dee4dbd7f9cf" width="300"/>
+</p>
 
 #### Check Attendance
 
 The system logs attendance by identifying users in real-time and comparing live captures with stored facial embeddings. Below is a placeholder for images demonstrating the attendance check feature.
 
-<img src="https://github.com/anhminhnguyen3110/Face-attendance-system/assets/57170354/40d19bb2-6e65-47ba-b4ca-923283ded1fe" width="500"/>
-
-<img src="https://github.com/anhminhnguyen3110/Face-attendance-system/assets/57170354/06ef2c15-bc47-4f8a-a64d-0505cd7340ee" width="500"/>
+<p align="center">
+<img src="https://github.com/anhminhnguyen3110/Face-attendance-system/assets/57170354/40d19bb2-6e65-47ba-b4ca-923283ded1fe" width="300"/>
+<img src="https://github.com/anhminhnguyen3110/Face-attendance-system/assets/57170354/06ef2c15-bc47-4f8a-a64d-0505cd7340ee" width="300"/>
+</p>
 
 #### Identify Eyes & Smile
 
 Additional features include identifying eyes and smiles using Haar cascades provided by OpenCV. Below is a placeholder for images demonstrating these features.
 
-<img src="https://github.com/anhminhnguyen3110/Face-attendance-system/assets/57170354/e8a761a5-6496-4830-a020-6b6e3cb64462" width="500"/>
-
-<img src="https://github.com/anhminhnguyen3110/Face-attendance-system/assets/57170354/38260757-f697-43dc-9c72-9fdc8abcc8d8" width="500"/>
+<p align="center">
+<img src="https://github.com/anhminhnguyen3110/Face-attendance-system/assets/57170354/e8a761a5-6496-4830-a020-6b6e3cb64462" width="300"/>
+<img src="https://github.com/anhminhnguyen3110/Face-attendance-system/assets/57170354/38260757-f697-43dc-9c72-9fdc8abcc8d8" width="300"/>
+</p>
 
 ### Anti-Spoofing System
 
 The anti-spoofing system ensures security by using the MiniFASNet architecture, which includes auxiliary supervision of the Fourier spectrum to differentiate between real and fake faces. Below is a placeholder for images demonstrating the spoofing detection system.
 
-<img src="https://github.com/anhminhnguyen3110/Face-attendance-system/assets/57170354/87dafc8e-b64a-4917-b251-3adf6c83b94e" width="500"/>
-
-<img src="https://github.com/anhminhnguyen3110/Face-attendance-system/assets/57170354/61fb2d03-3860-459b-8ed8-7d25e45abeed" width="500"/>
-
-<img src="https://github.com/anhminhnguyen3110/Face-attendance-system/assets/57170354/7a4552ce-7bee-4816-ae8e-a041aa95b6b6" width="1000"/>
+<p align="center">
+<img src="https://github.com/anhminhnguyen3110/Face-attendance-system/assets/57170354/87dafc8e-b64a-4917-b251-3adf6c83b94e" width="300"/>
+<img src="https://github.com/anhminhnguyen3110/Face-attendance-system/assets/57170354/61fb2d03-3860-459b-8ed8-7d25e45abeed" width="300"/>
+<img src="https://github.com/anhminhnguyen3110/Face-attendance-system/assets/57170354/7a4552ce-7bee-4816-ae8e-a041aa95b6b6" width="400"/>
+</p>
 
 ## Conclusion
 
