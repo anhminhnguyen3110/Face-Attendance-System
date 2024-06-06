@@ -65,7 +65,7 @@ The experiments conducted using various models yielded the following results:
 
 #### Best CNN Model ROC Curve
 <p align="center">
-    <img src="https://github.com/anhminhnguyen3110/Face-attendance-system/assets/57170354/5d7164b9-df75-4263-a5e4-80cbaad68931" width="800"/>
+    <img src="https://github.com/anhminhnguyen3110/Face-attendance-system/assets/57170354/5d7164b9-df75-4263-a5e4-80cbaad68931" width="600"/>
 </p>
 
 ### Pretrained Model (VGG16) Training Experiments
@@ -79,7 +79,7 @@ The experiments conducted using various models yielded the following results:
 
 #### Best Pretrained Model (VGG16) ROC Curve
 <p align="center">
-    <img src="https://github.com/anhminhnguyen3110/Face-attendance-system/assets/57170354/b06c992e-4ef5-4564-b354-ed6a2b4ff18a" width="800"/>
+    <img src="https://github.com/anhminhnguyen3110/Face-attendance-system/assets/57170354/b06c992e-4ef5-4564-b354-ed6a2b4ff18a" width="600"/>
 </p>
 
 ### Optimized Pretrained Model (VGG16) with Haar Cascade Experiments
@@ -90,7 +90,7 @@ The experiments conducted using various models yielded the following results:
 
 #### Best Optimized Pretrained Model (VGG16) ROC Curve
 <p align="center">
-    <img src="https://github.com/anhminhnguyen3110/Face-attendance-system/assets/57170354/bdb8d773-1e45-4dc0-a6d9-ceb8a287be4c" width="800"/>
+    <img src="https://github.com/anhminhnguyen3110/Face-attendance-system/assets/57170354/bdb8d773-1e45-4dc0-a6d9-ceb8a287be4c" width="600"/>
 </p>
 
 ### Experiments to find out the top performance model (Using Optimized Technique)
@@ -107,7 +107,7 @@ The experiments conducted using various models yielded the following results:
 
 #### Best Performed Model (VGG16) ROC Curve
 <p align="center">
-    <img src="https://github.com/anhminhnguyen3110/Face-attendance-system/assets/57170354/401595b8-8bcb-4178-ad31-70da2a90fad9" width="800"/>
+    <img src="https://github.com/anhminhnguyen3110/Face-attendance-system/assets/57170354/401595b8-8bcb-4178-ad31-70da2a90fad9" width="600"/>
 </p>
 
 # Face Recognition Attendance System
