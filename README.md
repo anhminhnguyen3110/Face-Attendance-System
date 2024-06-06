@@ -46,9 +46,9 @@ This is a step-by-step guide to install dlib on Windows 10. Make sure to follow 
 
 # Dataset
 
-For this project, a face recognition dataset consisting of 31 different classes, each representing a distinct individual, will be utilized. The dataset is structured with folders corresponding to each class containing a collection of images of the respective person. Notably, all individuals in the dataset are famous personalities, allowing for a diverse and challenging set of face images to evaluate the performance of the developed models. The images within each class capture various angles, expressions, and lighting conditions, providing a comprehensive representation of the individual's facial features. This dataset's format aligns well with the requirements of the face recognition task as it enables training and evaluation of models to accurately classify and recognize individuals based on their facial characteristics. The availability of multiple images per class also allows for thorough testing and validation of the developed systems, ensuring their robustness and generalization capabilities. The dataset can be accessed at the following link.
+For this project, a face recognition dataset consisting of 31 different classes, each representing a distinct individual, will be utilized. The dataset is structured with folders corresponding to each class containing a collection of images of the respective person. Notably, all individuals in the dataset are famous personalities, allowing for a diverse and challenging set of face images to evaluate the performance of the developed models. The images within each class capture various angles, expressions, and lighting conditions, providing a comprehensive representation of the individual's facial features. 
 
-**Dataset Link:** [Dataset](https://example.com/dataset-link)
+**Dataset Link:** [Dataset](https://www.kaggle.com/datasets/vasukipatel/face-recognition-dataset)
 
 ## Results
 
@@ -89,7 +89,6 @@ The experiments conducted using various models yielded the following results:
 | 5      | MobileNetV2| RS: 54, Img: 128x128, Dense: 128, Dropout: 0.3, Epoch: 40 | 63.85%  | 0.94    | ![Training Loss](https://github.com/anhminhnguyen3110/Face-attendance-system/assets/57170354/ee030b17-7c6c-4ee5-b6e5-bbd51098fce6) | ![Training Accuracy](https://github.com/anhminhnguyen3110/Face-attendance-system/assets/57170354/6a1a4de0-a7be-42c6-b90d-b1aa03ff7940) |
 | 6      | EfficientNetB0| RS: 54, Img: 128x128, Dense: 128, Dropout: 0.3, Epoch: 40 | 4.69%   | 0.56    | ![Training Loss](https://github.com/anhminhnguyen3110/Face-attendance-system/assets/57170354/80097ad8-d254-4bfc-bc7d-033ed031027f) | ![Training Accuracy](https://github.com/anhminhnguyen3110/Face-attendance-system/assets/57170354/7ce4f267-5288-4162-b396-cf350b868703)
  |
-
 # Face Recognition Attendance System
 
 The face recognition system includes features for user registration, attendance checking, and additional functionalities like identifying eyes and smiles. Below is a brief overview of the system and placeholders for demonstration images.
@@ -106,38 +105,38 @@ OpenCV (cv2) is used for real-time image processing. The `face_recognition` libr
 
 New users can be registered by capturing their facial data and storing the corresponding embeddings. Below is a placeholder for images demonstrating user registration.
 
-![Register New User](https://github.com/anhminhnguyen3110/Face-attendance-system/assets/57170354/449504ee-e1b5-43e9-87f5-7b56217a7af0)
+<img src="https://github.com/anhminhnguyen3110/Face-attendance-system/assets/57170354/449504ee-e1b5-43e9-87f5-7b56217a7af0" width="200"/>
 
-![Successful Registration](https://github.com/anhminhnguyen3110/Face-attendance-system/assets/57170354/4766fa59-ec22-46b4-b3ac-dee4dbd7f9cf)
+<img src="https://github.com/anhminhnguyen3110/Face-attendance-system/assets/57170354/4766fa59-ec22-46b4-b3ac-dee4dbd7f9cf" width="200"/>
 
-![Failed Registration](https://github.com/anhminhnguyen3110/Face-attendance-system/assets/57170354/c8b05c01-4f9e-4aa4-aeff-4d74dea25041)
+<img src="https://github.com/anhminhnguyen3110/Face-attendance-system/assets/57170354/c8b05c01-4f9e-4aa4-aeff-4d74dea25041" width="200"/>
 
 #### Check Attendance
 
 The system logs attendance by identifying users in real-time and comparing live captures with stored facial embeddings. Below is a placeholder for images demonstrating the attendance check feature.
 
-![Attendance Check](https://github.com/anhminhnguyen3110/Face-attendance-system/assets/57170354/40d19bb2-6e65-47ba-b4ca-923283ded1fe)
+<img src="https://github.com/anhminhnguyen3110/Face-attendance-system/assets/57170354/40d19bb2-6e65-47ba-b4ca-923283ded1fe" width="200"/>
 
-![User Not Registered](https://github.com/anhminhnguyen3110/Face-attendance-system/assets/57170354/06ef2c15-bc47-4f8a-a64d-0505cd7340ee)
+<img src="https://github.com/anhminhnguyen3110/Face-attendance-system/assets/57170354/06ef2c15-bc47-4f8a-a64d-0505cd7340ee" width="200"/>
 
 #### Identify Eyes & Smile
 
 Additional features include identifying eyes and smiles using Haar cascades provided by OpenCV. Below is a placeholder for images demonstrating these features.
 
-![Identify Eyes and Smile Box](https://github.com/anhminhnguyen3110/Face-attendance-system/assets/57170354/e8a761a5-6496-4830-a020-6b6e3cb64462)
+<img src="https://github.com/anhminhnguyen3110/Face-attendance-system/assets/57170354/e8a761a5-6496-4830-a020-6b6e3cb64462" width="200"/>
 
-![Identify Eyes and Smile](https://github.com/anhminhnguyen3110/Face-attendance-system/assets/57170354/38260757-f697-43dc-9c72-9fdc8abcc8d8)
+<img src="https://github.com/anhminhnguyen3110/Face-attendance-system/assets/57170354/38260757-f697-43dc-9c72-9fdc8abcc8d8" width="200"/>
 
 ### Anti-Spoofing System
 
 The anti-spoofing system ensures security by using the MiniFASNet architecture, which includes auxiliary supervision of the Fourier spectrum to differentiate between real and fake faces. Below is a placeholder for images demonstrating the spoofing detection system.
-![MiniFASNet architecture (MiniVision, 2020)](https://github.com/anhminhnguyen3110/Face-attendance-system/assets/57170354/290c1575-6a21-4509-b9a0-9fad78af0b9e)
+<img src="https://github.com/anhminhnguyen3110/Face-attendance-system/assets/57170354/290c1575-6a21-4509-b9a0-9fad78af0b9e" width="200"/>
 
-![Spoofing Detection](https://github.com/anhminhnguyen3110/Face-attendance-system/assets/57170354/87dafc8e-b64a-4917-b251-3adf6c83b94e)
+<img src="https://github.com/anhminhnguyen3110/Face-attendance-system/assets/57170354/87dafc8e-b64a-4917-b251-3adf6c83b94e" width="200"/>
 
-![Spoofing Detection](https://github.com/anhminhnguyen3110/Face-attendance-system/assets/57170354/61fb2d03-3860-459b-8ed8-7d25e45abeed)
+<img src="https://github.com/anhminhnguyen3110/Face-attendance-system/assets/57170354/61fb2d03-3860-459b-8ed8-7d25e45abeed" width="200"/>
 
-![Spoofing Detection](https://github.com/anhminhnguyen3110/Face-attendance-system/assets/57170354/7a4552ce-7bee-4816-ae8e-a041aa95b6b6)
+<img src="https://github.com/anhminhnguyen3110/Face-attendance-system/assets/57170354/7a4552ce-7bee-4816-ae8e-a041aa95b6b6" width="200"/>
 
 ## Conclusion
 
