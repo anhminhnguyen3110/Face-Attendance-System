@@ -133,9 +133,7 @@ The anti-spoofing system ensures security by using the MiniFASNet architecture, 
 
 <img src="https://github.com/anhminhnguyen3110/Face-attendance-system/assets/57170354/61fb2d03-3860-459b-8ed8-7d25e45abeed" width="500"/>
 
-<img src="https://github.com/anhminhnguyen3110/Face-attendance-system/assets/57170354/7a4552ce-7bee-4816-ae8e-a041aa95b6b6" width="500"/>
-
-<img src="https://github.com/anhminhnguyen3110/Face-attendance-system/assets/57170354/7a4552ce-7bee-4816-ae8e-a041aa95b6b6" width="500"/>
+<img src="https://github.com/anhminhnguyen3110/Face-attendance-system/assets/57170354/7a4552ce-7bee-4816-ae8e-a041aa95b6b6" width="1000"/>
 
 ## Conclusion
 
