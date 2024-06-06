@@ -109,8 +109,6 @@ New users can be registered by capturing their facial data and storing the corre
 
 <img src="https://github.com/anhminhnguyen3110/Face-attendance-system/assets/57170354/4766fa59-ec22-46b4-b3ac-dee4dbd7f9cf" width="500"/>
 
-<img src="https://github.com/anhminhnguyen3110/Face-attendance-system/assets/57170354/c8b05c01-4f9e-4aa4-aeff-4d74dea25041" width="500"/>
-
 #### Check Attendance
 
 The system logs attendance by identifying users in real-time and comparing live captures with stored facial embeddings. Below is a placeholder for images demonstrating the attendance check feature.
@@ -130,11 +128,12 @@ Additional features include identifying eyes and smiles using Haar cascades prov
 ### Anti-Spoofing System
 
 The anti-spoofing system ensures security by using the MiniFASNet architecture, which includes auxiliary supervision of the Fourier spectrum to differentiate between real and fake faces. Below is a placeholder for images demonstrating the spoofing detection system.
-<img src="https://github.com/anhminhnguyen3110/Face-attendance-system/assets/57170354/290c1575-6a21-4509-b9a0-9fad78af0b9e" width="500"/>
 
 <img src="https://github.com/anhminhnguyen3110/Face-attendance-system/assets/57170354/87dafc8e-b64a-4917-b251-3adf6c83b94e" width="500"/>
 
 <img src="https://github.com/anhminhnguyen3110/Face-attendance-system/assets/57170354/61fb2d03-3860-459b-8ed8-7d25e45abeed" width="500"/>
+
+<img src="https://github.com/anhminhnguyen3110/Face-attendance-system/assets/57170354/7a4552ce-7bee-4816-ae8e-a041aa95b6b6" width="500"/>
 
 <img src="https://github.com/anhminhnguyen3110/Face-attendance-system/assets/57170354/7a4552ce-7bee-4816-ae8e-a041aa95b6b6" width="500"/>
 
