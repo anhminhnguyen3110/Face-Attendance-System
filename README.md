@@ -1,4 +1,5 @@
 # Video demontraion of the project
+[Click here to watch the video](https://youtu.be/tf6SQ8tDwUs)
 [![Watch the video](https://media.cnn.com/api/v1/images/stellar/prod/200209224400-20200209-facial-recognition-gfx.jpg?q=w_1600,h_900,x_0,y_0,c_fill)](https://youtu.be/tf6SQ8tDwUs)
 
 # Installing dlib on Windows 10
