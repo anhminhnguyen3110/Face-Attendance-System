@@ -64,7 +64,9 @@ The experiments conducted using various models yielded the following results:
 | 4      | RS: 54, Img: 224x224, Dense: 128, Dropout: 0.5, Epoch: 70 | 30.33%  | 0.87    | ![Training Loss](https://github.com/anhminhnguyen3110/Face-attendance-system/assets/57170354/e07f3fd0-bc37-4a39-804c-7aafe53ae109) | ![Training Accuracy](https://github.com/anhminhnguyen3110/Face-attendance-system/assets/57170354/5c489771-15b7-485c-9755-6121ed467e74) |
 
 #### Best CNN Model ROC Curve
-<img src="https://github.com/anhminhnguyen3110/Face-attendance-system/assets/57170354/5d7164b9-df75-4263-a5e4-80cbaad68931" width="800"/>
+<p align="center">
+    <img src="https://github.com/anhminhnguyen3110/Face-attendance-system/assets/57170354/5d7164b9-df75-4263-a5e4-80cbaad68931" width="800"/>
+</p>
 
 ### Pretrained Model (VGG16) Training Experiments
 
@@ -76,7 +78,9 @@ The experiments conducted using various models yielded the following results:
 | 4      | RS: 54, Img: 224x224, Dense: 128, Dropout: 0.15, Epoch: 80 | 31.56%  | 0.90    | ![Training Loss](https://github.com/anhminhnguyen3110/Face-attendance-system/assets/57170354/3660a5aa-10e9-40ec-a22f-f1e7426adf85) | ![Training Accuracy](https://github.com/anhminhnguyen3110/Face-attendance-system/assets/57170354/ae0f3991-e3c5-4482-b08d-833f4ae8cd76) |
 
 #### Best Pretrained Model (VGG16) ROC Curve
-<img src="https://github.com/anhminhnguyen3110/Face-attendance-system/assets/57170354/b06c992e-4ef5-4564-b354-ed6a2b4ff18a" width="800"/>
+<p align="center">
+    <img src="https://github.com/anhminhnguyen3110/Face-attendance-system/assets/57170354/b06c992e-4ef5-4564-b354-ed6a2b4ff18a" width="800"/>
+</p>
 
 ### Optimized Pretrained Model (VGG16) with Haar Cascade Experiments
 
@@ -85,7 +89,9 @@ The experiments conducted using various models yielded the following results:
 | 1      | RS: 54, Img: 128x128, Dense: 128, Dropout: 0, Epoch: 30 | 70.42%  | 0.97    | ![Training Loss](https://github.com/anhminhnguyen3110/Face-attendance-system/assets/57170354/f9f214f7-8548-4cd4-b6f7-aeaec39fa699) | ![Training Accuracy](https://github.com/anhminhnguyen3110/Face-attendance-system/assets/57170354/e0be24fb-8815-4205-a8f0-c1341983350d) |
 
 #### Best Optimized Pretrained Model (VGG16) ROC Curve
-<img src="https://github.com/anhminhnguyen3110/Face-attendance-system/assets/57170354/bdb8d773-1e45-4dc0-a6d9-ceb8a287be4c" width="800"/>
+<p align="center">
+    <img src="https://github.com/anhminhnguyen3110/Face-attendance-system/assets/57170354/bdb8d773-1e45-4dc0-a6d9-ceb8a287be4c" width="800"/>
+</p>
 
 ### Experiments to find out the top performance model (Using Optimized Technique)
 
@@ -100,7 +106,9 @@ The experiments conducted using various models yielded the following results:
  |
 
 #### Best Performed Model (VGG16) ROC Curve
-<img src="https://github.com/anhminhnguyen3110/Face-attendance-system/assets/57170354/401595b8-8bcb-4178-ad31-70da2a90fad9" width="800"/>
+<p align="center">
+    <img src="https://github.com/anhminhnguyen3110/Face-attendance-system/assets/57170354/401595b8-8bcb-4178-ad31-70da2a90fad9" width="800"/>
+</p>
 
 # Face Recognition Attendance System
 
