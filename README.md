@@ -63,6 +63,9 @@ The experiments conducted using various models yielded the following results:
 | 3      | RS: 54, Img: 128x128, Dense: 128, Dropout: 0.5, Epoch: 70 | 28.66%  | 0.84    | ![Training Loss](https://github.com/anhminhnguyen3110/Face-attendance-system/assets/57170354/a39f2951-00f6-48f2-8add-16d7c6da9008) | ![Training Accuracy](https://github.com/anhminhnguyen3110/Face-attendance-system/assets/57170354/db1ff572-321e-4d4f-ad0f-755257127294) |
 | 4      | RS: 54, Img: 224x224, Dense: 128, Dropout: 0.5, Epoch: 70 | 30.33%  | 0.87    | ![Training Loss](https://github.com/anhminhnguyen3110/Face-attendance-system/assets/57170354/e07f3fd0-bc37-4a39-804c-7aafe53ae109) | ![Training Accuracy](https://github.com/anhminhnguyen3110/Face-attendance-system/assets/57170354/5c489771-15b7-485c-9755-6121ed467e74) |
 
+#### Best CNN Model ROC Curve
+<img src="https://github.com/anhminhnguyen3110/Face-attendance-system/assets/57170354/5d7164b9-df75-4263-a5e4-80cbaad68931" width="800"/>
+
 ### Pretrained Model (VGG16) Training Experiments
 
 | Exp No | Configuration | Val Acc | ROC AUC | Chart Train Loss | Chart Train Accuracy |
@@ -72,13 +75,19 @@ The experiments conducted using various models yielded the following results:
 | 3      | RS: 54, Img: 128x128, Dense: 128, Dropout: 0.15, Epoch: 70 | 38.52%  | 0.91    | ![Training Loss](https://github.com/anhminhnguyen3110/Face-attendance-system/assets/57170354/9e1ba7b5-ba5b-44fa-a59e-403afd1f82fd) | ![Training Accuracy](https://github.com/anhminhnguyen3110/Face-attendance-system/assets/57170354/d9e9e29d-2966-4ecd-affe-149e79fa5e4b) |
 | 4      | RS: 54, Img: 224x224, Dense: 128, Dropout: 0.15, Epoch: 80 | 31.56%  | 0.90    | ![Training Loss](https://github.com/anhminhnguyen3110/Face-attendance-system/assets/57170354/3660a5aa-10e9-40ec-a22f-f1e7426adf85) | ![Training Accuracy](https://github.com/anhminhnguyen3110/Face-attendance-system/assets/57170354/ae0f3991-e3c5-4482-b08d-833f4ae8cd76) |
 
+#### Best Pretrained Model (VGG16) ROC Curve
+<img src="https://github.com/anhminhnguyen3110/Face-attendance-system/assets/57170354/b06c992e-4ef5-4564-b354-ed6a2b4ff18a" width="800"/>
+
 ### Optimized Pretrained Model (VGG16) with Haar Cascade Experiments
 
 | Exp No | Configuration | Val Acc | ROC AUC | Chart Train Loss | Chart Train Accuracy |
 |--------|----------------|---------|---------|------------------|----------------------|
 | 1      | RS: 54, Img: 128x128, Dense: 128, Dropout: 0, Epoch: 30 | 70.42%  | 0.97    | ![Training Loss](https://github.com/anhminhnguyen3110/Face-attendance-system/assets/57170354/f9f214f7-8548-4cd4-b6f7-aeaec39fa699) | ![Training Accuracy](https://github.com/anhminhnguyen3110/Face-attendance-system/assets/57170354/e0be24fb-8815-4205-a8f0-c1341983350d) |
 
-### Best Model (Using Optimized Technique)
+#### Best Optimized Pretrained Model (VGG16) ROC Curve
+<img src="https://github.com/anhminhnguyen3110/Face-attendance-system/assets/57170354/bdb8d773-1e45-4dc0-a6d9-ceb8a287be4c" width="800"/>
+
+### Experiments to find out the top performance model (Using Optimized Technique)
 
 | Exp No | Model Name | Configuration | Val Acc | ROC AUC | Chart Train Loss | Chart Train Accuracy |
 |--------|------------|---------------|---------|---------|------------------|----------------------|
@@ -89,6 +98,10 @@ The experiments conducted using various models yielded the following results:
 | 5      | MobileNetV2| RS: 54, Img: 128x128, Dense: 128, Dropout: 0.3, Epoch: 40 | 63.85%  | 0.94    | ![Training Loss](https://github.com/anhminhnguyen3110/Face-attendance-system/assets/57170354/ee030b17-7c6c-4ee5-b6e5-bbd51098fce6) | ![Training Accuracy](https://github.com/anhminhnguyen3110/Face-attendance-system/assets/57170354/6a1a4de0-a7be-42c6-b90d-b1aa03ff7940) |
 | 6      | EfficientNetB0| RS: 54, Img: 128x128, Dense: 128, Dropout: 0.3, Epoch: 40 | 4.69%   | 0.56    | ![Training Loss](https://github.com/anhminhnguyen3110/Face-attendance-system/assets/57170354/80097ad8-d254-4bfc-bc7d-033ed031027f) | ![Training Accuracy](https://github.com/anhminhnguyen3110/Face-attendance-system/assets/57170354/7ce4f267-5288-4162-b396-cf350b868703)
  |
+
+#### Best Performed Model (VGG16) ROC Curve
+<img src="https://github.com/anhminhnguyen3110/Face-attendance-system/assets/57170354/401595b8-8bcb-4178-ad31-70da2a90fad9" width="800"/>
+
 # Face Recognition Attendance System
 
 The face recognition system includes features for user registration, attendance checking, and additional functionalities like identifying eyes and smiles. Below is a brief overview of the system and placeholders for demonstration images.
