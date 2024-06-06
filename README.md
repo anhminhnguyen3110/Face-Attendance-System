@@ -52,6 +52,71 @@ For this project, a face recognition dataset consisting of 31 different classes,
 
 **Dataset Link:** [Dataset](https://www.kaggle.com/datasets/vasukipatel/face-recognition-dataset)
 
+## Methodology
+
+### CNN Model Architecture
+
+The CNN model was designed with the following architecture:
+
+- **Input Layer**: The input images were resized to 128x128 pixels.
+- **Convolutional Layers**: Several convolutional layers with ReLU activation functions were used to extract features from the images. Each convolutional layer was followed by a max-pooling layer to reduce the spatial dimensions.
+- **Dense Layers**: Fully connected layers were added after flattening the output of the convolutional layers. Dropout layers were included to prevent overfitting.
+- **Output Layer**: A softmax activation function was used in the final layer to classify the input images into one of the 31 classes.
+
+The architecture is summarized as follows:
+
+1. Conv2D -> ReLU -> MaxPooling2D
+2. Conv2D -> ReLU -> MaxPooling2D
+3. Flatten
+4. Dense -> ReLU
+5. Dropout
+6. Dense -> Softmax
+
+### Fine-Tuning Pretrained Models
+
+For fine-tuning the pretrained models, I used the following approach:
+
+1. **Model Selection**: I selected VGG16, a well-known convolutional neural network model pre-trained on the ImageNet dataset.
+2. **Freezing Layers**: The initial layers of the VGG16 model were frozen to retain the pre-trained weights. This helps leverage the learned features from a large dataset (ImageNet).
+3. **Adding Custom Layers**: New dense layers were added on top of the frozen layers to adapt the model to the specific task of face recognition. The architecture of the custom layers included a dense layer followed by a dropout layer to prevent overfitting and another dense layer with softmax activation for classification.
+
+The architecture for the fine-tuned model is summarized as follows:
+
+1. **Base Model (VGG16)**:
+    - Include all layers up to a certain depth, excluding the top layers.
+    - Freeze all layers to retain pre-trained weights.
+2. **Custom Layers**:
+    - Flatten
+    - Dense -> ReLU
+    - Dropout
+    - Dense -> Softmax
+
+### Haar Cascade Optimization
+
+The Haar Cascade classifier was used as an optimization technique to improve the performance of the image classification model. Haar Cascade is an effective object detection method used to identify faces in an image.
+
+1. **Face Detection**: The Haar Cascade classifier was used to detect faces in the input images. This step helps in focusing on the face region, eliminating background noise.
+2. **Image Cropping**: Once the face was detected, the image was cropped to include only the face region. This reduces the input size and ensures that the model trains on relevant features.
+3. **Data Augmentation**: Data augmentation techniques such as rotation, scaling, and flipping were applied to the cropped face images to increase the diversity of the training data.
+
+#### Before and After Haar Cascade
+Below are placeholders for images showing the effect of Haar Cascade optimization:
+
+<p align="center">
+    <img src="https://github.com/anhminhnguyen3110/Face-Attendance-System/assets/57170354/71b120fd-d4dc-48b9-874b-21a69f2d0a2e" width="600"/>
+</p>
+
+### Insights
+
+#### CNN Model
+The custom CNN model, though effective, had limitations in learning complex features due to the relatively small size of the dataset and the need for extensive parameter tuning. The dropout layers helped in preventing overfitting, but the validation accuracy was relatively low compared to the pretrained models.
+
+#### Pretrained Model (VGG16)
+Fine-tuning the VGG16 model provided significant improvements in performance. By freezing the early layers and training only the top layers, I was able to leverage the robust feature extraction capabilities of the pretrained model. This approach reduced the risk of overfitting and improved generalization, resulting in higher validation accuracy and a better ROC AUC score.
+
+#### Haar Cascade Optimization
+The use of Haar Cascade optimization improved the model's performance by focusing on the most relevant part of the image (the face) and reducing background noise. This pre-processing step allowed the model to learn more accurate features, resulting in higher validation accuracy and better overall performance.
+
 ## Results
 
 The experiments conducted using various models yielded the following results:
