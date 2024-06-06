@@ -1,16 +1,18 @@
-# Video demonstration of the project
-[Click here to watch the video](https://youtu.be/tf6SQ8tDwUs)
+# Face Recognition Attendance System
+
+## Video Demonstration
+[Click here to watch the video](https://youtu.be/tf6SQ8tDwUs)  
 [![Watch the video](https://media.cnn.com/api/v1/images/stellar/prod/200209224400-20200209-facial-recognition-gfx.jpg?q=w_1600,h_900,x_0,y_0,c_fill)](https://youtu.be/tf6SQ8tDwUs)
 
-# Installing dlib on Windows 10
+## Installing dlib on Windows 10
 
 This is a step-by-step guide to install dlib on Windows 10. Make sure to follow the steps carefully and in order. (For Python 3.8 only)
 
-## Prerequisites
+### Prerequisites
 
 - Python version: 3.8.0 (Date: 2019-10-14)
 
-## Installation Steps
+### Installation Steps
 
 1. **Install dlib**
 
@@ -44,9 +46,9 @@ This is a step-by-step guide to install dlib on Windows 10. Make sure to follow 
     pip install face-recognition
     ```
 
-# Dataset
+## Dataset
 
-For this project, a face recognition dataset consisting of 31 different classes, each representing a distinct individual, will be utilized. The dataset is structured with folders corresponding to each class containing a collection of images of the respective person. Notably, all individuals in the dataset are famous personalities, allowing for a diverse and challenging set of face images to evaluate the performance of the developed models. The images within each class capture various angles, expressions, and lighting conditions, providing a comprehensive representation of the individual's facial features. 
+For this project, a face recognition dataset consisting of 31 different classes, each representing a distinct individual, will be utilized. The dataset is structured with folders corresponding to each class containing a collection of images of the respective person. Notably, all individuals in the dataset are famous personalities, allowing for a diverse and challenging set of face images to evaluate the performance of the developed models. The images within each class capture various angles, expressions, and lighting conditions, providing a comprehensive representation of the individual's facial features.
 
 **Dataset Link:** [Dataset](https://www.kaggle.com/datasets/vasukipatel/face-recognition-dataset)
 
@@ -93,7 +95,7 @@ The experiments conducted using various models yielded the following results:
     <img src="https://github.com/anhminhnguyen3110/Face-attendance-system/assets/57170354/bdb8d773-1e45-4dc0-a6d9-ceb8a287be4c" width="600"/>
 </p>
 
-### Experiments to find out the top performance model (Using Optimized Technique)
+### Experiments to Find the Top Performance Model (Using Optimized Technique)
 
 | Exp No | Model Name | Configuration | Val Acc | ROC AUC | Chart Train Loss | Chart Train Accuracy |
 |--------|------------|---------------|---------|---------|------------------|----------------------|
@@ -109,9 +111,7 @@ The experiments conducted using various models yielded the following results:
     <img src="https://github.com/anhminhnguyen3110/Face-attendance-system/assets/57170354/401595b8-8bcb-4178-ad31-70da2a90fad9" width="600"/>
 </p>
 
-# Face Recognition Attendance System
-
-The face recognition system includes features for user registration, attendance checking, and additional functionalities like identifying eyes and smiles. Below is a brief overview of the system and placeholders for demonstration images.
+## System Features
 
 ### Tkinter GUI
 
